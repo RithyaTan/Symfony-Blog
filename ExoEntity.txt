@@ -1,0 +1,51 @@
+Consignes : 
+
+- Pour cet exercice, vous aller créer une copie de votre projet "blogExo". ✅
+
+- Créer une entité "Auteur" avec les propriétées suivantes : 
+    - nom(string, 100, not null) ✅
+    - prenom(string, 100, not null) ✅
+    - dateDeNaissance(date, not null) ✅
+    - biographie(text, not null) ✅
+*** Solution : 
+    * Exécuter dans le terminal : symfony console make:entity Auteur
+    * Suivre les indication dans le terminal afin d'ajouter les propriétés
+
+- Créer le fichier de migration puis exécuter ce fichier (dans le terminal) et vérifier que votre table auteur soit créée dans votre base de données ✅
+*** Solution : 
+    * Exécuter symfony console make:migration
+    * Exécuter symfony console doctrine:migrations:migrate
+
+- Créer un controller pour Auteur ✅
+*** Solution : 
+    * Exécuter symfony console make:controller Auteur
+
+- Faire les traitement suivants dans AuteurController : 
+    - Créer un formulaire pour l'ajout d'un auteur, faire le traitement dans une méthode dans le controller puis l'afficher dans une page twig (formAuteur.html.twig) ✅
+    *** Solution : 
+        * Exécuter : symfony console make:form Auteur
+        * Suivre les instructions, 
+        * Pour la méthode, voir le controller
+
+    - Ajoutez quelques auteurs dans votre base de données ✅
+
+    - Créer une nouvelle méthode qui permet de récupérer la liste des auteurs pour l'afficher sur une page twig dans un table(nom, prenom, action(voir, modifier et supprimer)) ✅
+    *** Solution : 
+        * Voir la méthode add() dans le controller AuteurController 
+        * Aller dans le template dans auteur/auteurs.html.twig
+
+    - Créer une méthode qui vous permet de récupérer un auteur pour afficher ces informations dans une page twig en passant par le bouton voir ✅
+    *** Solution :
+
+    - Créer une méthode qui permet de modifier un auteur via un formulaire en passant par le bouton modifier de la page du tableau ✅
+    *** Solution :
+
+    - Créer une méthode qui permet de supprimer un auteur via le bouton supprimer du tableau ✅
+    *** Solution :
+
+------------------------------------------------------------------------------------------------------------
+Aides : 
+
+- Création d'une entité : symfony console make:entity Auteur ✅
+- Création d'un formulaire : symfony console make:form Auteur ✅
+- Création d'un controller : symfony console make:controller Auteur ✅

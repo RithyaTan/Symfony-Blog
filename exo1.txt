@@ -1,0 +1,3 @@
+- Créez une nouvelle route/methode (testHome) qui vous permet d'afficher la page d'accueil ✅
+- Dans la méthode, créez une variable $article qui sera un tableau contenant des informations d'un article (titre, dateDeCreation, auteur, contenu) ✅
+- Remplacer les information de la page d'accueil avec celle de l'article créé ✅

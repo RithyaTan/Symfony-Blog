@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+    <div class="row mt-5 justify-content-center text-center">
+        <h1>Dernier article publié</h1>
+            <div>
+                <h3>{{ article.titre }}</h3>
+                <h6 class="text-muted"> Publié le : {{ article.dateDeCreation|date("d/m/Y \à H\\hi") }}</h6>
+                <h6 class="text-muted"> Modifié le : </h6>
+                <h6> Auteur :</h6>
+
+                <p> {{ article.contenu }} </p>
+            </div>    
+    </div>  
+{% endblock %}

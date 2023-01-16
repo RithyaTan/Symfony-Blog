@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %} {# on hérite de la page base.html.twig #}
+
+{% block body %}
+
+    {{ parent() }} {# Ceci n'est pas du php. Cela permet de conserver le block du parent (base.html.twig) #}
+
+    {# {% set prenom = "Rithya" %} #} {# Crétation de la variable prenom. pour créer une variable en twig #}
+
+    {# pour afficher une variable en twig #}
+        <p> Bonjour, je suis {{ prenom ~ ' ' ~ nom }}. </p> 
+
+    {# pour accèder aux informations d'un tableau en twig, on utilise une boucle. On pioche une information avec le . #}
+    {% for personne in personnes %}
+        <p> Bonsoir, je suis {{ personne.prenom ~ ' ' ~ personne.nom }}. </p>
+    {% endfor %}
+
+{% endblock %}

@@ -1,3 +1,43 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+# app_test:
+#   path: /test
+#   controller: App\Controller\TestController::index
+
+app_cgv:
+  path: /cgv
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'statique/cgv.html.twig'
+
+app_contact:
+  path: /contact
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'statique/contact.html.twig'
+
+app_quiSommesNous:
+  path: /qui-sommes-nous
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'statique/quiSommesNous.html.twig'
+
+app_values:
+  path: /values
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'statique/values.html.twig'
+
+app_devenirBlogueur:
+  path: /devenir-blogueur
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'statique/devenirBlogueur.html.twig'
+
+app_joinTeam:
+  path: /join-team
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'statique/joinTeam.html.twig'
